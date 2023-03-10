@@ -311,3 +311,36 @@ body {
         font-size: 2.25rem;
     }
 }
+
+/* footer */
+.footer {
+    max-width: 100%;
+    height: 271px;
+    background-color: #232323;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer__logo {
+    max-width: 11%; /*196px*/
+    
+    img {
+        width: 100%;  
+    }
+}
+
+.footer__social {
+    color: v.$font-color;
+    width: 10%; /*166px*/
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fa-linkedin-in {
+        color: v.$primary-color;
+    }
+}
