@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  max-width: 100%;
+  width: 100%;
   height: 820px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,7 +84,8 @@ body {
   line-height: 1.625rem;
   letter-spacing: 0.175rem;
   /*14px, 2.8px*/
-  width: 8%; /*108px*/
+  max-width: 8%; /*108px*/
+  width: 100%;
   height: 46px;
   text-align: center;
   margin-top: 8%;
@@ -136,7 +137,7 @@ body {
 
 /* Section - why choose us */
 .explore {
-  max-width: 100%;
+  width: 100%;
   height: 685px;
   background-image: url(/images/whyus/castle-background.png);
   background-repeat: no-repeat;
@@ -192,10 +193,16 @@ body {
   max-width: 40%; /*228px*/
   width: 100%;
   min-height: 63px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
 }
 
 .explore__img {
   max-width: 40%;
+  width: 100%;
   min-height: 450px;
   display: -ms-grid;
   display: grid;
@@ -280,7 +287,7 @@ body {
 
 /* Section - how it works */
 .howitworks {
-  max-width: 100%;
+  width: 100%;
   height: 340px;
   background-color: #333333;
   display: -webkit-box;
@@ -344,14 +351,13 @@ body {
   background-color: #333333;
 }
 
-/* Setion -- book now */
+/* Section -- book now */
 .destination {
-  max-width: 100%;
   height: 1400px;
 }
 
 .destination__content {
-  max-width: 100%;
+  width: 100%;
   min-height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,6 +411,11 @@ body {
   max-width: 40%; /*228px*/
   width: 100%;
   min-height: 63px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
   margin-top: 10%; /*46px*/
 }
 .destination__content .empty {
@@ -416,7 +427,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  max-width: 100%;
+  width: 100%;
   min-height: 50%;
 }
 .hotel-one .destination--text {
@@ -429,7 +440,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  max-width: 100%;
+  width: 100%;
 }
 .hotel-two .destination--text {
   -webkit-transform: translateY(10%);
@@ -438,7 +449,7 @@ body {
 
 /* Section: testimonial */
 .testimonial {
-  max-width: 100%;
+  width: 100%;
   height: 731px;
   background-image: url(/images/testimonial/backpacker-background.png);
   background-repeat: no-repeat;
@@ -472,16 +483,25 @@ body {
 .testimonial__content {
   background-color: #333333;
   max-width: 63%; /*1113px*/
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.testimonial__quote {
+.testimonial__content .testimonial__img {
+  max-width: 40%; /*445px*/
+  width: 100%;
+}
+.testimonial__content .testimonial__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.testimonial__content .testimonial__quote {
   color: #FFFFFF;
   margin: 5% 1% 4% 8%; /*50px 25px 40px 60px*/
 }
-.testimonial__quote h4 {
+.testimonial__content .testimonial__quote h4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
@@ -490,14 +510,14 @@ body {
   /*20px*/
   text-transform: uppercase;
 }
-.testimonial__quote p {
+.testimonial__content .testimonial__quote p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.625rem;
   letter-spacing: 0.1rem;
 }
-.testimonial__quote .quote {
+.testimonial__content .testimonial__quote .quote {
   color: #5474FD;
   font-size: 2.25rem;
 }
@@ -562,7 +582,7 @@ body {
   color: #5474FD;
 }
 
-/* media queries */
+/* MEDIA QUERIES*/
 @media screen and (max-width: 1440px) {
   body {
     max-width: 1440px;
@@ -575,7 +595,8 @@ body {
     max-width: 60%;
   }
   .header__scroll {
-    width: 15%;
+    max-width: 15%;
+    width: 100%;
   }
   .header__bottomnav .bottomnav--logo {
     -webkit-box-flex: 1;
@@ -617,5 +638,33 @@ body {
     font-size: 2rem;
     line-height: 1.625rem;
     letter-spacing: 0.1rem;
+  }
+  /* Section: book now for desktop 1440px --> no changes */
+  /* Section: testimonial for desktop 1440px */
+  .testimonial {
+    height: 600px;
+  }
+  .testimonial__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 70%;
+  }
+  .testimonial__content .testimonial__img {
+    margin: auto;
+  }
+  .testimonial__content .testimonial__img img {
+    width: 100%;
+  }
+  /* footer for desktop 1440px */
+  .footer {
+    height: 200px;
+  }
+  .footer__logo {
+    max-width: 25%;
+    width: 100%;
+  }
+  .footer__social {
+    max-width: 25%;
+    width: 100%;
   }
 }
