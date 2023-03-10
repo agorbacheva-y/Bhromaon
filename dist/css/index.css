@@ -6,6 +6,7 @@
 
 body {
   max-width: 1773px;
+  width: 100%;
 }
 
 /* Header */
@@ -127,6 +128,7 @@ body {
 
 .explore__content {
   max-width: 32%; /*560px*/
+  width: 100%;
   height: 51%; /*350px*/
   display: flex;
   flex-direction: column;
@@ -191,13 +193,24 @@ body {
   align-items: center;
   position: relative;
 }
+.howitworks .howitworks__background {
+  background-image: url(/images/bounce.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  max-width: 45%;
+  min-height: 80%; /*170px*/
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  left: 27%;
+}
 .howitworks .howitworks__illustration {
-  display: flex;
   max-width: 57%; /*1050px*/
   width: 100%;
-  min-height: 50%; /*170px*/
+  display: flex;
   justify-content: space-between;
-  z-index: 1;
+  min-height: 80%; /*170px*/
 }
 .howitworks .howitworks__illustration .howitworks__icons {
   display: flex;
@@ -211,15 +224,10 @@ body {
   color: #FFFFFF;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1;
 }
 .howitworks .howitworks__illustration .howitworks__icons img {
-  width: 25%;
   background-color: #333333;
-}
-.howitworks .background {
-  position: absolute;
-  top: 15%;
-  z-index: 0;
 }
 
 /* Setion -- book now */
@@ -373,7 +381,7 @@ body {
 }
 
 .footer__logo {
-  max-width: 11%; /*196px*/
+  max-width: 15%; /*196px*/
 }
 .footer__logo img {
   width: 100%;
@@ -403,4 +411,58 @@ body {
 }
 .footer__social .fa-linkedin-in {
   color: #5474FD;
+}
+
+/* media queries */
+@media screen and (max-width: 1440px) {
+  body {
+    max-width: 1440px;
+    width: 100%;
+  }
+  .header {
+    height: 1024px;
+  }
+  .header__search {
+    max-width: 60%;
+  }
+  .header__scroll {
+    width: 15%;
+  }
+  .header__bottomnav .bottomnav--logo {
+    flex: auto;
+  }
+  .header__bottomnav .bottomnav--links {
+    flex: auto;
+  }
+  .header__bottomnav .bottomnav--links a {
+    padding-left: 2%;
+  }
+  /* why choose us for desktop 1440px */
+  .explore__content {
+    max-width: 40%;
+    width: 100%;
+    height: 60%;
+  }
+  .explore__content button {
+    max-width: 50%;
+  }
+  /* how it works for desktop 1440px */
+  .howitworks {
+    height: 250px;
+  }
+  .howitworks .howitworks__background {
+    max-width: 40%;
+    left: 30%;
+  }
+  .howitworks .howitworks__illustration {
+    max-width: 57%; /*1050px*/
+    text-align: center;
+  }
+  .howitworks .howitworks__illustration .howitworks__icons {
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
