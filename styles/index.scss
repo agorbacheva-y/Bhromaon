@@ -17,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 100%;
+    max-width: 100%;
     height: 820px;
     
     display: flex;
@@ -103,7 +103,7 @@ body {
 
 /* Section - why choose us */
 .explore {
-    width: 100%;
+    max-width: 100%;
     height: 685px;
     background-image: url(/images/whyus/castle-background.png);
     background-repeat: no-repeat;
@@ -134,9 +134,6 @@ body {
 
     button {
         @include m.button-style;
-        max-width: 40%; /*228px*/
-        width: 100%;
-        min-height: 63px;
     }
 }
 
@@ -165,7 +162,7 @@ body {
 
 /* Section - how it works */
 .howitworks {
-    width: 100%;
+    max-width: 100%;
     height: 340px;
     background-color: #333333;
     display: flex;
@@ -201,4 +198,69 @@ body {
         top: 15%;
         z-index: 0;
     }
+}
+
+/* Setion -- book now */
+.destination {
+    max-width: 100%;
+    height: 1400px;
+}
+
+.destination__content {
+    max-width: 100%;
+    min-height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .destination--text {
+        color: v.$font-color;
+        background-color: #232323;
+        opacity: 0.9;
+        max-width: 31%; /*540px*/
+        width: 100%;
+        min-height: 60%; /*371px*/
+        padding: 3% 2%; /*50px 30px*/
+
+        h4 {
+            @include m.font-one($size:1.25rem); /*20px*/
+        }
+
+        h5 {
+            @include m.font-one($size:1.25rem); /*20px*/
+            text-transform: uppercase;
+            margin-top: 6%; /*23px*/
+        }
+
+        p {
+            @include m.font-one;
+            margin-top: 3%; /*13px*/
+        }
+
+        button {
+            @include m.button-style;
+            margin-top: 12%; /*46px*/
+        }
+    }
+
+    .empty {
+        visibility: hidden;
+    }
+}
+
+.hotel-one {
+    background-image: url(/images/section/madrid-house.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    min-height: 50%;
+}
+
+.hotel-two {
+    background-image: url(/images/section/madrid-cliff.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
 }

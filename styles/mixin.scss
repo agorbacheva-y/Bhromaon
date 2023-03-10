@@ -20,4 +20,7 @@
     text-transform: uppercase;
     background-color: v.$primary-color;
     color: v.$font-color;
+    max-width: 40%; /*228px*/
+    width: 100%;
+    min-height: 63px;
 }

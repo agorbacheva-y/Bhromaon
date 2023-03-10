@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: 100%;
+  max-width: 100%;
   height: 820px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,6 +62,9 @@ body {
   text-transform: uppercase;
   background-color: #5474FD;
   color: #FFFFFF;
+  max-width: 40%; /*228px*/
+  width: 100%;
+  min-height: 63px;
   max-width: 25%;
   width: 100%;
   min-height: 63px;
@@ -134,7 +137,7 @@ body {
 
 /* Section - why choose us */
 .explore {
-  width: 100%;
+  max-width: 100%;
   height: 685px;
   background-image: url(/images/whyus/castle-background.png);
   background-repeat: no-repeat;
@@ -277,7 +280,7 @@ body {
 
 /* Section - how it works */
 .howitworks {
-  width: 100%;
+  max-width: 100%;
   height: 340px;
   background-color: #333333;
   display: -webkit-box;
@@ -333,4 +336,88 @@ body {
   position: absolute;
   top: 15%;
   z-index: 0;
+}
+
+/* Setion -- book now */
+.destination {
+  max-width: 100%;
+  height: 1400px;
+}
+
+.destination__content {
+  max-width: 100%;
+  min-height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.destination__content .destination--text {
+  color: #FFFFFF;
+  background-color: #232323;
+  opacity: 0.9;
+  max-width: 31%; /*540px*/
+  width: 100%;
+  min-height: 60%; /*371px*/
+  padding: 3% 2%; /*50px 30px*/
+}
+.destination__content .destination--text h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
+  /*20px*/
+}
+.destination__content .destination--text h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
+  /*20px*/
+  text-transform: uppercase;
+  margin-top: 6%; /*23px*/
+}
+.destination__content .destination--text p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
+  margin-top: 3%; /*13px*/
+}
+.destination__content .destination--text button {
+  text-transform: uppercase;
+  background-color: #5474FD;
+  color: #FFFFFF;
+  max-width: 40%; /*228px*/
+  width: 100%;
+  min-height: 63px;
+  margin-top: 12%; /*46px*/
+}
+.destination__content .empty {
+  visibility: hidden;
+}
+
+.hotel-one {
+  background-image: url(/images/section/madrid-house.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  min-height: 50%;
+}
+
+.hotel-two {
+  background-image: url(/images/section/madrid-cliff.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
 }
