@@ -7,6 +7,13 @@
 body {
   max-width: 1773px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* Header */
@@ -53,7 +60,7 @@ body {
   text-align: center;
   color: #999999;
 }
-.header__search button {
+.header__search .search-bar {
   font-family: "Aleo", serif;
   font-weight: 400;
   font-size: 0.875rem;
@@ -73,8 +80,20 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header__search button i {
+.header__search .search-bar i {
   margin-left: 7%;
+}
+.header__search .search-bar:hover {
+  cursor: pointer;
+  -webkit-filter: saturate(4);
+          filter: saturate(4);
+}
+.header__search .search-bar:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__search .search-icon {
+  display: none;
 }
 
 .header__scroll {
@@ -93,6 +112,9 @@ body {
 .header__scroll a {
   text-decoration: none;
   color: #FFFFFF;
+}
+.header__scroll a:hover {
+  color: #FF6363;
 }
 
 .header__bottomnav {
@@ -133,6 +155,9 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   padding-left: 3%;
+}
+.header__bottomnav .bottomnav--links a:hover {
+  color: #FF6363;
 }
 
 /* Section - why choose us */
@@ -198,6 +223,15 @@ body {
   font-size: 1rem;
   line-height: 1.625rem;
   letter-spacing: 0.1rem;
+}
+.explore__content button:hover {
+  cursor: pointer;
+  -webkit-filter: saturate(4);
+          filter: saturate(4);
+}
+.explore__content button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .explore__img {
@@ -418,6 +452,15 @@ body {
   letter-spacing: 0.1rem;
   margin-top: 10%; /*46px*/
 }
+.destination__content .destination--text button:hover {
+  cursor: pointer;
+  -webkit-filter: saturate(4);
+          filter: saturate(4);
+}
+.destination__content .destination--text button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .destination__content .empty {
   visibility: hidden;
 }
@@ -583,8 +626,14 @@ body {
   text-decoration: none;
   color: #FFFFFF;
 }
+.footer__social a:hover {
+  color: #FF6363;
+}
 .footer__social .fa-linkedin-in {
   color: #5474FD;
+}
+.footer__social .fa-linkedin-in:hover {
+  color: #FF6363;
 }
 
 /* MEDIA QUERIES*/
@@ -592,9 +641,6 @@ body {
   body {
     max-width: 1115px;
     width: 100%;
-  }
-  .header {
-    height: 1024px;
   }
   .header__search {
     max-width: 60%;
