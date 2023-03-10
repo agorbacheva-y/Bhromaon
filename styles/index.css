@@ -60,14 +60,14 @@ body {
   letter-spacing: 0.088rem;
   /*14p, 1.4pxx*/
   text-transform: uppercase;
+  background-color: #5474FD;
+  color: #FFFFFF;
   max-width: 25%;
   width: 100%;
   min-height: 63px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #5474FD;
-  color: #FFFFFF;
 }
 .header__search button i {
   margin-left: 5%;
@@ -130,4 +130,148 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   padding-left: 3%;
+}
+
+/* why choose us */
+.explore {
+  width: 100%;
+  height: 685px;
+  background-image: url(/images/whyus/castle-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore__content {
+  max-width: 32%; /*560px*/
+  height: 51%; /*350px*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.explore__content h2 {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
+  /*36px*/
+  color: #FFFFFF;
+}
+.explore__content p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
+  color: #E8E8E8;
+}
+.explore__content button {
+  text-transform: uppercase;
+  background-color: #5474FD;
+  color: #FFFFFF;
+  max-width: 40%; /*228px*/
+  width: 100%;
+  min-height: 63px;
+}
+
+.explore__img {
+  max-width: 40%;
+  min-height: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2% 1fr 2% 1fr 2% 1fr 2% 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr 2% 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2%; /*10px*/
+}
+
+.explore__img > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.explore__img > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.explore__img > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.explore__img > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.explore__img > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.explore__img > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.explore__img > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.explore__img > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.explore__img > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.explore__img > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+.explore__img .explore__img--one {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 1/2/2/5;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.explore__img .explore__img--two {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 2/3/3/6;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

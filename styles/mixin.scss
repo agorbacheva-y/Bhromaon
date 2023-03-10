@@ -15,3 +15,9 @@
     line-height: $line;
     letter-spacing: $letter;
 }
+
+@mixin button-style {
+    text-transform: uppercase;
+    background-color: v.$primary-color;
+    color: v.$font-color;
+}

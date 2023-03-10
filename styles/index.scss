@@ -46,13 +46,11 @@ body {
 
     button {
         @include m.font-two($size:0.875rem, $letter:0.088rem); /*14p, 1.4pxx*/
-        text-transform: uppercase;
+        @include m.button-style;
         max-width: 25%;
         width: 100%;
         min-height: 63px;
         justify-content: space-between;
-        background-color: v.$primary-color;
-        color: v.$font-color;
 
             i {
                 margin-left: 5%;
@@ -100,5 +98,68 @@ body {
             text-transform: uppercase;
             padding-left: 3%;
         }
+    }
+}
+
+/* why choose us */
+.explore {
+    width: 100%;
+    height: 685px;
+    background-image: url(/images/whyus/castle-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore__content {
+    max-width: 32%; /*560px*/
+    height: 51%; /*350px*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        @include m.font-two($size:2.25rem); /*36px*/
+        color: v.$font-color;
+    }
+
+    p {
+        @include m.font-one;
+        color: #E8E8E8;
+    }
+
+    button {
+        @include m.button-style;
+        max-width: 40%; /*228px*/
+        width: 100%;
+        min-height: 63px;
+    }
+}
+
+.explore__img {
+    max-width: 40%;
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%; /*10px*/
+
+    .explore__img--one {
+        grid-area: 1/2/2/5;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .explore__img--two {
+        grid-area: 2/3/3/6;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
