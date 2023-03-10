@@ -1,13 +1,17 @@
 @use 'variables' as v;
 
-@mixin font-one ($size:1rem, $line:1.625rem) {
+@mixin font-one ($size:1rem, $line:1.625rem, $letter:0.1rem) {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    line-height: 1.625rem;
+    font-size: $size;
+    line-height: $line;
+    letter-spacing: $letter;
 }
 
-@mixin font-two ($size:1rem, $line:1.625rem) {
+@mixin font-two ($size:1rem, $line:1.625rem, $letter:0.1rem) {
     font-family: 'Aleo', serif;
     font-weight: 400;
-    line-height: 1.625rem;
+    font-size: $size;
+    line-height: $line;
+    letter-spacing: $letter;
 }

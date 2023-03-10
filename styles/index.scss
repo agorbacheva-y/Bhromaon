@@ -15,8 +15,7 @@ body {
     background-image: url(/images/header/mountains.png);
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 820px;
-    border: 1px solid red;
+    height: 820px;
     
     display: flex;
     flex-direction: column;
@@ -24,30 +23,47 @@ body {
     justify-content: center;
 }
 
-.header__scroll {
-    @include m.font-two($size:0.875rem);
-    
-    a {
-        text-decoration: none;
-        color: v.$font-color;
-    }
-}
-
 .header__search {
-    border: 1px solid red;
+    max-width: 37%; /*653px*/
+    width: 100%;
+    border: 0.125rem solid v.$font-color; /*2px*/
+    margin: 6% 0; /*50px*/
 
 
     input {
-        @include m.font-one($size:0.875rem);
-        max-width: 503px;
+        @include m.font-one($size:0.875rem, $letter:0.175rem); /*14px, 2.8px*/
+        max-width: 75%;
         width: 100%;
         min-height: 63px;
+        float: left;
+        text-align: center;
+        color: #999999;
     }
 
     button {
-        @include m.font-two($size:00.875rem);
-        text-transform: uppercase;    
-        width: 153px;
-        height: 63px;
+        @include m.font-two($size:0.875rem, $letter:0.088rem); /*14p, 1.4pxx*/
+        text-transform: uppercase;
+        max-width: 25%;
+        width: 100%;
+        min-height: 63px;
+        justify-content: space-between;
+        background-color: v.$primary-color;
+        color: v.$font-color;
+
+            i {
+                margin-left: 5%;
+            }
+    }
+}
+
+.header__scroll {
+    @include m.font-one($size:0.875rem, $letter:0.175rem); /*14px, 2.8px*/
+    width: 8%; /*108px*/
+    height: 46px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: v.$font-color;
     }
 }
