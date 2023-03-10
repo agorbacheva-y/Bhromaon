@@ -364,7 +364,7 @@ body {
   opacity: 0.9;
   max-width: 31%; /*540px*/
   width: 100%;
-  min-height: 60%; /*371px*/
+  min-height: 55%; /*371px*/
   padding: 3% 2%; /*50px 30px*/
 }
 .destination__content .destination--text h4 {
@@ -400,7 +400,7 @@ body {
   max-width: 40%; /*228px*/
   width: 100%;
   min-height: 63px;
-  margin-top: 12%; /*46px*/
+  margin-top: 10%; /*46px*/
 }
 .destination__content .empty {
   visibility: hidden;
@@ -414,6 +414,10 @@ body {
   max-width: 100%;
   min-height: 50%;
 }
+.hotel-one .destination--text {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%); /*64px*/
+}
 
 .hotel-two {
   background-image: url(/images/section/madrid-cliff.png);
@@ -421,6 +425,10 @@ body {
   background-size: cover;
   background-position: center center;
   max-width: 100%;
+}
+.hotel-two .destination--text {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%); /*64px*/
 }
 
 /* Section: testimonial */
