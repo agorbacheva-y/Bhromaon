@@ -339,12 +339,19 @@ body {
     img {
         width: 100%;  
     }
+
+    p {
+        @include m.font-one;
+        color: v.$font-color;
+        padding-top: 8%;
+    }
 }
 
 .footer__social {
     color: v.$font-color;
-    width: 10%; /*166px*/
-    height: 45%;
+    max-width: 10%; /*166px*/
+    width: 100%;
+    min-height: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
