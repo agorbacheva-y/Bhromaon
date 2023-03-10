@@ -79,18 +79,16 @@ body {
     bottom: 0;
     display: flex;
     align-items: center;
-    flex: 1;
-    // flex-wrap: wrap;
+    justify-content: center;
 
     .bottomnav--logo {
-        margin-left: 1%;
+        flex: 1;
+        text-align: center;
     }
     
     .bottomnav--links {
         flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10%;
+        margin-left: 2%;
 
         a {
             @include m.font-two($size:0.875rem);
