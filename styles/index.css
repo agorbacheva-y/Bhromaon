@@ -11,6 +11,9 @@ body {
 .header {
   background-image: url(/images/header/mountains.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   width: 100%;
   height: 820px;
   display: -webkit-box;
@@ -26,6 +29,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .header__search {
@@ -83,4 +87,47 @@ body {
 .header__scroll a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.header__bottomnav {
+  background-color: #5474FD;
+  width: 100%;
+  min-height: 10%; /*83px*/
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.header__bottomnav .bottomnav--logo {
+  margin-left: 1%;
+}
+.header__bottomnav .bottomnav--links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 10%;
+}
+.header__bottomnav .bottomnav--links a {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-left: 3%;
 }

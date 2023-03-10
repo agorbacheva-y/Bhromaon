@@ -14,6 +14,9 @@ body {
 .header {
     background-image: url(/images/header/mountains.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     width: 100%;
     height: 820px;
     
@@ -21,6 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .header__search {
@@ -65,5 +69,36 @@ body {
     a {
         text-decoration: none;
         color: v.$font-color;
+    }
+}
+
+.header__bottomnav {
+    background-color: v.$primary-color;
+    width: 100%;
+    min-height: 10%; /*83px*/
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    // flex-wrap: wrap;
+
+    .bottomnav--logo {
+        margin-left: 1%;
+    }
+    
+    .bottomnav--links {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+
+        a {
+            @include m.font-two($size:0.875rem);
+            text-decoration: none;
+            color: v.$font-color;
+            text-transform: uppercase;
+            padding-left: 3%;
+        }
     }
 }

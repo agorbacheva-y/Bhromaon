@@ -1,6 +1,6 @@
 @use 'variables' as v;
 
-@mixin font-one ($size:1rem, $line:1.625rem, $letter:0.1rem) {
+@mixin font-one ($size:1rem, $line:1.625rem, $letter:0.1rem)/*16px, 26px, 1.6px*/ {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: $size;
@@ -8,7 +8,7 @@
     letter-spacing: $letter;
 }
 
-@mixin font-two ($size:1rem, $line:1.625rem, $letter:0.1rem) {
+@mixin font-two ($size:1rem, $line:1.625rem, $letter:0.1rem)/*16px, 26px, 1.6px*/ {
     font-family: 'Aleo', serif;
     font-weight: 400;
     font-size: $size;
