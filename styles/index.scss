@@ -1,2 +1,53 @@
 @use 'variables' as v;
 @use 'mixin' as m;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    max-width: 1773px; 
+}
+
+.header {
+    background-image: url(/images/header/mountains.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 820px;
+    border: 1px solid red;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__scroll {
+    @include m.font-two($size:0.875rem);
+    
+    a {
+        text-decoration: none;
+        color: v.$font-color;
+    }
+}
+
+.header__search {
+    border: 1px solid red;
+
+
+    input {
+        @include m.font-one($size:0.875rem);
+        max-width: 503px;
+        width: 100%;
+        min-height: 63px;
+    }
+
+    button {
+        @include m.font-two($size:00.875rem);
+        text-transform: uppercase;    
+        width: 153px;
+        height: 63px;
+    }
+}
