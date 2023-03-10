@@ -84,7 +84,7 @@ body {
   line-height: 1.625rem;
   letter-spacing: 0.175rem;
   /*14px, 2.8px*/
-  max-width: 8%; /*108px*/
+  max-width: 10%; /*108px*/
   width: 100%;
   height: 46px;
   text-align: center;
@@ -489,17 +489,22 @@ body {
   display: flex;
 }
 .testimonial__content .testimonial__img {
-  max-width: 40%; /*445px*/
-  width: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .testimonial__content .testimonial__img img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 .testimonial__content .testimonial__quote {
   color: #FFFFFF;
   margin: 5% 1% 4% 8%; /*50px 25px 40px 60px*/
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 .testimonial__content .testimonial__quote h4 {
   font-family: "Josefin Sans", sans-serif;
@@ -583,9 +588,9 @@ body {
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1115px) {
   body {
-    max-width: 1440px;
+    max-width: 1115px;
     width: 100%;
   }
   .header {
@@ -611,7 +616,7 @@ body {
   .header__bottomnav .bottomnav--links a {
     padding-left: 2%;
   }
-  /* why choose us for desktop 1440px */
+  /* why choose us for max 1115px */
   .explore__content {
     max-width: 40%;
     width: 100%;
@@ -620,7 +625,7 @@ body {
   .explore__content button {
     max-width: 50%;
   }
-  /* how it works for desktop 1440px */
+  /* how it works for desktop max 1115px */
   .howitworks {
     height: 250px;
   }
@@ -639,23 +644,27 @@ body {
     line-height: 1.625rem;
     letter-spacing: 0.1rem;
   }
-  /* Section: book now for desktop 1440px --> no changes */
-  /* Section: testimonial for desktop 1440px */
-  .testimonial {
-    height: 600px;
-  }
+  /* Section: book now for max 1115px --> no changes */
+  /* Section: testimonial for max 1115px */
   .testimonial__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .testimonial__content .testimonial__img {
-    margin: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
   }
-  .testimonial__content .testimonial__img img {
-    width: 100%;
+  .testimonial__content .testimonial__quote {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 80%;
   }
-  /* footer for desktop 1440px */
+  /* footer for max 1115px */
   .footer {
     height: 200px;
   }

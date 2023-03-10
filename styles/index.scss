@@ -61,7 +61,7 @@ body {
 
 .header__scroll {
     @include m.font-one($size:0.875rem, $letter:0.175rem); /*14px, 2.8px*/
-    max-width: 8%; /*108px*/
+    max-width: 10%; /*108px*/
     width: 100%;
     height: 46px;
     text-align: center;
@@ -312,18 +312,19 @@ body {
     display: flex;
 
     .testimonial__img {
-        max-width: 40%; /*445px*/
-        width: 100%;
+        flex: 2;
         
         img {
             object-fit: cover;
             height: 100%;
+            width: 100%;
         }
     }
 
     .testimonial__quote {
         color: v.$font-color;
         margin: 5% 1% 4% 8%; /*50px 25px 40px 60px*/
+        flex: 3;
     
         h4 {
             @include m.font-one($size:1.25rem); /*20px*/
@@ -387,9 +388,9 @@ body {
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1115px) {
     body {
-        max-width: 1440px; 
+        max-width: 1115px; 
         width: 100%;
     }
 
@@ -419,7 +420,7 @@ body {
             }
         }
     }
-     /* why choose us for desktop 1440px */
+     /* why choose us for max 1115px */
     .explore__content {
         max-width: 40%;
         width: 100%;
@@ -430,7 +431,7 @@ body {
         }
     }
 
-    /* how it works for desktop 1440px */
+    /* how it works for desktop max 1115px */
     .howitworks {
         height: 250px;
     
@@ -449,27 +450,28 @@ body {
         }
     }
 
-    /* Section: book now for desktop 1440px --> no changes */
+    /* Section: book now for max 1115px --> no changes */
 
-    /* Section: testimonial for desktop 1440px */
+    /* Section: testimonial for max 1115px */
     .testimonial {
-        height: 600px;
+
     }
     
     .testimonial__content {
         flex-wrap: wrap;
-        max-width: 70%;
-    
+        justify-content: center;
+
         .testimonial__img {
-            margin: auto;
-            
-            img {
-                width: 100%;
-            }
+            flex: none;
+        }
+
+        .testimonial__quote {
+            flex: none;
+            width: 80%;
         }
     }
 
-    /* footer for desktop 1440px */
+    /* footer for max 1115px */
     .footer {
         height: 200px;
     }
