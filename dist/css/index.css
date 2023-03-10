@@ -377,6 +377,7 @@ body {
 }
 .footer__logo img {
   width: 100%;
+  transform: translateX(-3%);
 }
 .footer__logo p {
   font-family: "Josefin Sans", sans-serif;
@@ -389,13 +390,16 @@ body {
 }
 
 .footer__social {
-  color: #FFFFFF;
   max-width: 10%; /*166px*/
   width: 100%;
   min-height: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer__social a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .footer__social .fa-linkedin-in {
   color: #5474FD;

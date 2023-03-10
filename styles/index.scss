@@ -335,7 +335,8 @@ body {
     max-width: 11%; /*196px*/
     
     img {
-        width: 100%;  
+        width: 100%;
+        transform: translateX(-3%);
     }
 
     p {
@@ -346,13 +347,17 @@ body {
 }
 
 .footer__social {
-    color: v.$font-color;
     max-width: 10%; /*166px*/
     width: 100%;
     min-height: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+        text-decoration: none;
+        color: v.$font-color;
+    }
 
     .fa-linkedin-in {
         color: v.$primary-color;
