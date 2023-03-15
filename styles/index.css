@@ -670,7 +670,7 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1050px) {
   body {
     max-width: 1115px;
     width: 100%;
@@ -682,20 +682,7 @@ body {
     max-width: 15%;
     width: 100%;
   }
-  .header__bottomnav .bottomnav--logo {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-  }
-  .header__bottomnav .bottomnav--links {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-  }
-  .header__bottomnav .bottomnav--links a {
-    padding-left: 2%;
-  }
-  /* why choose us for max 1115px */
+  /* why choose us for max 1050px */
   .explore__content {
     max-width: 40%;
     width: 100%;
@@ -704,7 +691,7 @@ body {
   .explore__content button {
     max-width: 50%;
   }
-  /* how it works for desktop max 1115px */
+  /* how it works for max 1050px */
   .howitworks {
     height: 250px;
   }
@@ -723,8 +710,7 @@ body {
     line-height: 1.625rem;
     letter-spacing: 0.1rem;
   }
-  /* Section: book now for max 1115px --> no changes */
-  /* Section: testimonial for max 1115px */
+  /* Section: testimonial for max 1050px */
   .testimonial__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -743,5 +729,4 @@ body {
             flex: none;
     width: 80%;
   }
-  /* footer for max 1115px */
 }
