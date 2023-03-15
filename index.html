@@ -47,6 +47,11 @@
             <div class="bottomnav--logo">
                 <a href="/index.html"><img src="/images/logo.svg" alt="logo"></a>
             </div>
+
+            <!-- burger menu for small screen -->
+            <span class="bottomnav--bars" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+            <!-- navmenu for larger screens -->
             <div class="bottomnav--links">
                 <ul>
                     <li><a href="#">Who we are</a></li>
@@ -54,6 +59,17 @@
                     <li><a href="#">Travel with us</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
+            </div>
+
+            <!-- overlay navmenu for small screens -->
+            <div id="myNav" class="bottomnav--overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay--content">
+                    <a href="#">Who we are</a>
+                    <a href="#">What we do</a>
+                    <a href="#">Travel with us</a>
+                    <a href="#">Contact us</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -163,5 +179,17 @@
             <a href=""><i class="fa-brands fa-pinterest"></i></a>
         </div>
     </footer>
+
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
 </html>
