@@ -109,22 +109,19 @@ body {
     
     .bottomnav--links {
         flex: 1;
-        margin-left: 2%;
 
         ul {
             list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20%;
         }
 
-        li {
-            display: inline-block;
-            
-        }
         a {
             @include m.font-two($size:0.875rem);
             text-decoration: none;
             color: v.$font-color;
             text-transform: uppercase;
-            padding-left: 3%;
 
             &:hover {
                 color: #FF6363;
@@ -431,20 +428,49 @@ body {
         color: v.$font-color;
 
         &:hover {
-            color: #FF6363;
-        }
-    }
-
-    .fa-linkedin-in {
-        color: v.$primary-color;
-
-        &:hover {
-            color: #FF6363;
+            color: v.$primary-color;
         }
     }
 }
 
 /* MEDIA QUERIES*/
+@media screen and (max-width:1300px) {
+    body {
+        max-width: 1300px; 
+        width: 100%;
+    }
+
+    .header__bottomnav {
+        .bottomnav--logo {
+            flex: auto;
+        }
+
+        .bottomnav--links {
+            flex: auto;
+
+            ul {
+                margin-right: 5%;
+            }
+        }
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer__logo {
+        max-width: 25%;
+        width: 100%;
+        text-align: center;   
+    }
+
+    .footer__social {
+        max-width: 25%;
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width:1115px) {
     body {
         max-width: 1115px; 
@@ -525,18 +551,4 @@ body {
     }
 
     /* footer for max 1115px */
-    .footer {
-        height: 200px;
-    }
-
-    .footer__logo {
-        max-width: 25%;
-        width: 100%;
-        text-align: center;   
-    }
-
-    .footer__social {
-        max-width: 25%;
-        width: 100%;
-    }
 }
