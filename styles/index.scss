@@ -504,6 +504,16 @@ body {
         }
     }
 
+    .explore__img {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5%;
+
+        .explore__img--one {
+            margin-bottom: 3%;
+        }
+    }
+
     /* how it works for max 1050px */
     .howitworks {
         height: 250px;
@@ -603,6 +613,46 @@ body {
         }
     }
     
+    /* why choose us for max 800px*/
+    .explore {
+        flex-wrap: wrap;
+    }
+
+    .explore__content {
+        max-width: 800px;
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        margin: 5%;
+
+        h2 {
+            margin-bottom: 3%;
+        }
+
+        button {
+            margin: auto;
+        }
+    }
+    
+    .explore__img {
+        max-width: 800px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+
+        .explore__img--one {
+           margin: 0;
+           max-width: 49%;
+           width: 100%;
+        }
+
+        .explore__img--two {
+            max-width: 49%;
+            width: 100%;
+        }
+    }
+
     /* book now section for max 800px */
     .destination__content {
         .destination--text {
@@ -612,6 +662,21 @@ body {
     
         .empty {
             display: none;
+        }
+    }
+
+    /*testimonial for max 800px */
+    .testimonial__content {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    /*footer for max 800px */
+    .footer__logo {
+        max-width: 50%;
+
+        img {
+            width: 50%;
         }
     }
 }
@@ -644,6 +709,14 @@ body {
             &:active {
                 transform: scale(1.1);
             }
+        }
+    }
+
+    .footer__logo {
+        max-width: 70%;
+
+        img {
+            width: 70%;
         }
     }
 
