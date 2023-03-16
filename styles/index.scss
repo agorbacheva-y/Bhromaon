@@ -524,7 +524,7 @@ body {
         }
     }
 
-    /* Section: testimonial for max 1050px */
+    /* testimonial for max 1050px */
     .testimonial__content {
         flex-wrap: wrap;
         justify-content: center;
@@ -546,6 +546,7 @@ body {
         width: 100%;
     }
 
+    /* responsive navbar */
     .header__bottomnav {
         justify-content: space-between;
 
@@ -602,4 +603,17 @@ body {
             }
         }
     }
+    
+    /* book now section for max 800px */
+    .destination__content {
+        .destination--text {
+            max-width: 50%;
+            width: 100%;
+        }
+    
+        .empty {
+            display: none;
+        }
+    }
 }
+

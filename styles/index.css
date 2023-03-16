@@ -716,7 +716,7 @@ body {
     line-height: 1.625rem;
     letter-spacing: 0.1rem;
   }
-  /* Section: testimonial for max 1050px */
+  /* testimonial for max 1050px */
   .testimonial__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -741,6 +741,7 @@ body {
     max-width: 800px;
     width: 100%;
   }
+  /* responsive navbar */
   .header__bottomnav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -797,5 +798,13 @@ body {
     right: 3%;
     font-size: 20px;
     color: #FFFFFF;
+  }
+  /* book now section for max 800px */
+  .destination__content .destination--text {
+    max-width: 50%;
+    width: 100%;
+  }
+  .destination__content .empty {
+    display: none;
   }
 }
