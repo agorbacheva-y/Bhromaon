@@ -547,50 +547,50 @@ body {
     }
 
     .header__bottomnav {
+        justify-content: space-between;
 
         .bottomnav--links {
             display: none;
         }
 
+        .bottomnav--logo {
+            flex: none;
+        }
+
         .bottomnav--bars {
             display: block;
+            margin-right: 3%;
+
+            .fa-bars{
+                font-size: 30px;
+                color:white;
+            }
         }
 
         .bottomnav--overlay {
             display: block;
-            height: 100%;
-            width: 0;
-            position: fixed;
+            flex-wrap: wrap;
+            height: 200%;
+            width: 100%;
+            position: absolute;
             z-index: 1; 
-            left: 0;
-            top: 0;
-            background-color: #E0FFDC; 
-            opacity: 0.9; 
-            overflow-x: hidden; 
+            right: 0;
+            bottom: 0;
+            background-color: v.$primary-color; 
+            overflow: hidden; 
             transition: 0.5s; 
             }
 
-        .overlay-content {
-            position: relative;
-            top: 25%; 
-            width: 100%; 
-            text-align: center; 
-            margin-top: 30px; 
-            /* border: 2px solid red; */
-          }
+        // .overlay-content {
+        //     display: block;
+        //     width: 100%; 
+        //     border: 2px solid red;
+        //   }
 
-        .overlay a {
-            padding: 8px;
+        .overlay-content a {
             text-decoration: none;
-            font-size: 36px;
-            color: #7BA376;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 3.125rem; /*50px;*/
             display: block; 
-            transition: 0.3s; 
+            transition: 0.3s;
           }
 
         .overlay a:hover, .overlay a:focus {
@@ -603,21 +603,5 @@ body {
             right: 45px;
             font-size: 60px;
           }
-
-          .fa-bars{
-            font-size: 30px;
-            color:#7BA376;
-            display: block;
-    
-        }
-        
-        .open_bars{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
     }
-    
-
-
 }
