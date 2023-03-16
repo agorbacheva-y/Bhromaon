@@ -36,6 +36,9 @@ body {
     border: 0.125rem solid v.$font-color; /*2px*/
     margin: 2% 0; /*50px*/
 
+    .screen--small {
+        display: none;
+    }
 
     input {
         @include m.font-one($size:0.875rem, $letter:0.175rem); /*14px, 2.8px*/
@@ -67,10 +70,6 @@ body {
         &:active {
             transform: scale(1.1);
         }
-    }
-
-    .search-icon {
-        display: none;
     }
 }
 
@@ -617,3 +616,35 @@ body {
     }
 }
 
+@media screen and (max-width: 650px)  {
+    body {
+        max-width: 650px;
+        width: 100%;
+    }
+
+    .header__search {
+        .screen--small {
+            display: inline;
+        }
+    
+        .screen--large {
+            display: none;
+        }
+
+        .search-icon {
+            @include m.button-style;
+            max-width: 25%;
+            width: 100%;
+
+            &:hover {
+                cursor: pointer;
+                filter: saturate(4);
+            }
+    
+            &:active {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
