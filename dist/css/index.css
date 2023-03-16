@@ -581,7 +581,6 @@ body {
   }
   .header__bottomnav .bottomnav--overlay {
     display: block;
-    flex-wrap: wrap;
     height: 200%;
     width: 100%;
     position: absolute;
@@ -592,18 +591,27 @@ body {
     overflow: hidden;
     transition: 0.5s;
   }
-  .header__bottomnav .overlay-content a {
+  .header__bottomnav .bottomnav--overlay li a {
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
     display: block;
-    transition: 0.3s;
+    padding: 5px 0;
+    text-align: center;
   }
-  .header__bottomnav .overlay a:hover, .header__bottomnav .overlay a:focus {
-    color: #808080;
+  .header__bottomnav .bottomnav--overlay a:hover, .header__bottomnav .bottomnav--overlay a:focus {
+    color: #FF6363;
   }
-  .header__bottomnav .overlay .closebtn {
+  .header__bottomnav .bottomnav--overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 0;
+    right: 3%;
+    font-size: 20px;
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=index.css.map */

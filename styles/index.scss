@@ -124,7 +124,7 @@ body {
             text-transform: uppercase;
 
             &:hover {
-                color: #FF6363;
+                color: v.$highlight-color;
             }
         }
     }
@@ -569,7 +569,6 @@ body {
 
         .bottomnav--overlay {
             display: block;
-            flex-wrap: wrap;
             height: 200%;
             width: 100%;
             position: absolute;
@@ -579,29 +578,28 @@ body {
             background-color: v.$primary-color; 
             overflow: hidden; 
             transition: 0.5s; 
+
+            li a {
+                @include m.font-two;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: v.$font-color;
+                display: block; 
+                padding: 5px 0;
+                text-align: center;
             }
 
-        // .overlay-content {
-        //     display: block;
-        //     width: 100%; 
-        //     border: 2px solid red;
-        //   }
+            a:hover, a:focus {
+                color: v.$highlight-color;
+            }
 
-        .overlay-content a {
-            text-decoration: none;
-            display: block; 
-            transition: 0.3s;
-          }
-
-        .overlay a:hover, .overlay a:focus {
-            color: #808080;
-          }
-
-        .overlay .closebtn {
-            position: absolute;
-            top: 20px;
-            right: 45px;
-            font-size: 60px;
-          }
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 3%;
+                font-size: 20px;
+                color: v.$font-color;
+            }
+        }
     }
 }
