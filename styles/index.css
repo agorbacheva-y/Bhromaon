@@ -349,18 +349,6 @@ body {
           align-items: center;
   position: relative;
 }
-.howitworks .howitworks__background {
-  background-image: url(/images/bounce.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
-  max-width: 45%;
-  min-height: 80%; /*170px*/
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  left: 27%;
-}
 .howitworks .howitworks__illustration {
   max-width: 57%; /*1050px*/
   width: 100%;
@@ -371,6 +359,18 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 80%; /*170px*/
+}
+.howitworks .howitworks__illustration .howitworks__background {
+  background-image: url(/images/bounce.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  max-width: 45%;
+  min-height: 80%; /*170px*/
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  left: 27%;
 }
 .howitworks .howitworks__illustration .howitworks__icons {
   display: -webkit-box;
@@ -394,6 +394,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   z-index: 1;
+  text-align: center;
 }
 .howitworks .howitworks__illustration .howitworks__icons img {
   background-color: #333333;
@@ -739,6 +740,7 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
+    width: 100%;
   }
   .testimonial__content .testimonial__quote {
     -webkit-box-flex: 0;
@@ -818,7 +820,7 @@ body {
   .explore__content {
     max-width: 800px;
     width: 100%;
-    height: 40%;
+    height: 60%;
     text-align: center;
     margin: 5%;
   }
@@ -897,6 +899,31 @@ body {
   .header__search .search-icon:active {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  .howitworks .howitworks__illustration {
+    max-width: 95%;
+  }
+  .howitworks .howitworks__illustration .howitworks__icons {
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.1rem;
+  }
+  .howitworks .howitworks__illustration .howitworks__background {
+    max-width: 70%;
+    left: 15%;
+  }
+  .destination__content .destination--text {
+    max-width: 80%;
+    width: 100%;
+  }
+  .testimonial__title h2 {
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.1rem;
   }
   .footer__logo {
     max-width: 70%;

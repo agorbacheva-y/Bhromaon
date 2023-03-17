@@ -218,19 +218,6 @@ body {
     align-items: center;
     position: relative;
 
-    .howitworks__background {
-        background-image: url(/images/bounce.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center top;
-        max-width: 45%;
-        min-height: 80%; /*170px*/
-        width: 100%;
-        position: absolute;
-        z-index: 0;
-        left: 27%;
-    }
-
     .howitworks__illustration {
         max-width: 57%; /*1050px*/
         width: 100%;
@@ -238,6 +225,19 @@ body {
         justify-content: space-between;
         min-height: 80%; /*170px*/
         
+        .howitworks__background {
+            background-image: url(/images/bounce.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center top;
+            max-width: 45%;
+            min-height: 80%; /*170px*/
+            width: 100%;
+            position: absolute;
+            z-index: 0;
+            left: 27%;
+        }
+
         .howitworks__icons {
             display: flex;
             flex-direction: column;
@@ -246,6 +246,7 @@ body {
             align-items: center;
             justify-content: space-evenly;
             z-index: 1;
+            text-align: center;
                 
             img {
                 background-color: #333333;
@@ -540,6 +541,7 @@ body {
 
         .testimonial__img {
             flex: none;
+            width: 100%;
         }
 
         .testimonial__quote {
@@ -621,7 +623,7 @@ body {
     .explore__content {
         max-width: 800px;
         width: 100%;
-        height: 40%;
+        height: 60%;
         text-align: center;
         margin: 5%;
 
@@ -709,6 +711,34 @@ body {
             &:active {
                 transform: scale(1.1);
             }
+        }
+    }
+
+    .howitworks {    
+        .howitworks__illustration {
+            max-width: 95%;
+            
+            .howitworks__icons {
+                @include m.font-two($size:1.3rem);
+            }
+
+            .howitworks__background {
+                max-width: 70%;
+                left: 15%;
+            }
+        }
+    }
+
+    .destination__content {
+        .destination--text {
+            max-width: 80%;
+            width: 100%;
+        }
+    }
+
+    .testimonial__title {
+        h2 {
+            @include m.font-two($size:1.8rem);
         }
     }
 
