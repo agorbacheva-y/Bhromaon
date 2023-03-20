@@ -140,6 +140,7 @@ body {
 }
 .header__bottomnav .bottomnav--bars {
   display: none;
+  cursor: pointer;
 }
 
 /* Section - why choose us */
