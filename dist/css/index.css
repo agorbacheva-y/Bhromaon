@@ -598,6 +598,7 @@ body {
   .header__bottomnav .bottomnav--overlay {
     display: block;
     height: 200%;
+    width: 0%;
     position: absolute;
     z-index: 1;
     right: 0;
